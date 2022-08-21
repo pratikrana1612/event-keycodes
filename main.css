@@ -11,13 +11,17 @@ body
     justify-content: center;
     align-items: center;
     height:100vh;
+    overflow:hidden;
 }
 .main_keycodes_render
 {
     text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.main_keycodes_render div
+.main_keycodes_render div:not(.container)
 {
     background-color: white;
     font-size:1rem;
@@ -26,4 +30,11 @@ body
     font-weight: 700;
     display:inline-block;
     margin:2rem;
+}
+.container
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
